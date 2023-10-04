@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/62ea397d3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__li">
+            <i class="fas fa-home"></i><a href="#"> Inicio </a>
+          </li>
+          <li class="nav__li">
+            <i class="fas fa-user-friends"></i><a href="#"> Sobre nosotros </a>
+          </li>
+          <li class="nav__li">
+            <i class="fas fa-dollar-sign"></i><a href="#"> Gana dinero </a>
+          </li>
+          <li class="nav__li">
+            <i class="fas fa-question-circle"></i><a href="#"> Ayuda </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    
+
+    <div class="content">
+      <h1 class="title">Impacto Desarrollo</h1>
+
+      <article class="main">
+        <div class="flex-container">
+          <div class="flex-item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+            dolores consectetur libero animi fugit nobis maxime temporibus
+            adipisci odit! Reprehenderit est alias delectus fugit libero
+            repellendus, pariatur dicta eum sequi. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Amet quibusdam soluta dicta ab,
+            officia expedita, in at delectus dolorum blanditiis totam a.
+            Blanditiis asperiores natus quia sed molestiae, quidem repellat!
+          </div>
+                 </div>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
+                    </div>
+      </article>
+
+
+      <aside class="aside">
+        <div class="flex-container">
+            <div class="flex-item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+              dolores consectetur libero animi fugit nobis maxime temporibus
+              adipisci odit! Reprehenderit est alias delectus fugit libero
+              repellendus, pariatur dicta eum sequi. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Amet quibusdam soluta dicta ab,
+              officia expedita, in at delectus dolorum blanditiis totam a.
+              Blanditiis asperiores natus quia sed molestiae, quidem repellat!
+            </div>
+        </div>
+
+
+
+        <div id="formulario" class="section">
+            <form
+              action="/controlador-registro"
+              method="POST"
+              class="form-registro"
+              id="form-registro"
+              enctype="multipart/form-data"
+            >
+              <div class="form-group">
+                <label for="Nombre">Nombre y Apellido*</label>
+                <input
+                  type="text"
+                  class="input input-text"
+                  name="nombre"
+                  required
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Mail">Email*</label>
+                <input
+                  type="mail"
+                  class="input"
+                  name="mail"
+                  required
+                  placeholder="usuario@mail.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Telefono">Teléfono*</label>
+                <input
+                  type="number"
+                  class="input"
+                  name="telefono"
+                  placeholder="2615462587"
+                />
+              </div>
+              <div class="form-group">
+                <label for="radio-input">Teléfono*</label>
+                <input  type="radio" />
+                <label for="radio-input">Teléfono*</label>
+                <input  type="radio" />
+                <label for="radio-input">Teléfono*</label>
+                <input  type="radio" />
+              </div>
+              <div class="form-group">
+                <label for="pais">País</label>
+                <select name="pais" id="pais" class="input">
+                  <option value="arg">ARG</option>
+                  <option value="chi">CHI</option>
+                  <option value="brz">BRZ</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="imagen">Imagen de perfil</label>
+                <input type="file" class="input" name="imagen" />
+              </div>
+              <div class="form-group">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input
+                  type="date"
+                  name="fecha-inicio"
+                  min="2015-01-01"
+                  max="2020-06-20"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contrasena" class="contrasena">Contraseña*</label>
+                <input
+                  type="password"
+                  class="input"
+                  name="contrasena"
+                  pattern=".{8,}"
+                  placeholder="Ingrese al menos 8 dígitos"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contrasena" class="contrasena">Repetir contraseña*</label>
+                <input
+                  type="password"
+                  class="input"
+                  name="contrasena"
+                  pattern=".{8,}"
+                  placeholder="Ingrese al menos 8 dígitos"
+                />
+              </div>
+    
+              <button type="submit" class="link btn">Registrarme</button>
+            </form>
+          </div>
+      </aside>
+      <footer class="footer">
+        Footer
+        <ul class="footer__ul">
+          <li class="footer__li">
+            <i class="fas fa-home"></i><a href="#"> Inicio </a>
+          </li>
+          <li class="footer__li">
+            <i class="fas fa-user-friends"></i><a href="#"> Sobre nosotros </a>
+          </li>
+          <li class="footer__li">
+            <i class="fas fa-dollar-sign"></i><a href="#"> Gana dinero </a>
+          </li>
+          <li class="footer__li">
+            <i class="fas fa-question-circle"></i><a href="#"> Ayuda </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
